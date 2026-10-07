@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[9,4,5,12,10,11,111,112,24]
+        document.write("<h1>" + a)
+        let square=a.map((n)=>n*n)
+        document.write("<h2> square of number = " +square)
+
+        let sm=a.reduce((n,n1)=>n+n1)
+        document.write("<h2> Sum of elements = " + sm)
+
+        let even=a.filter((n)=> n%2==0).map((x)=>x*x)
+        document.write("<h2> square of even number = " + even)
+
+        let min=a.reduce((a,a1)=>{
+            if (a < a1)
+                return a;
+            else
+                return a1;
+        })
+        document.write("<h2> min number = " + min)
+
+        let max=a.reduce((a,a1)=>{
+            if(a > a1)
+                return a;
+            else
+                return a1;
+        })
+        document.write("<h2> Max number = " + max)
+
+        let a1=a.filter((a)=> a > 10).map((n)=> n * n)
+        document.write("<h2> Second array square= " +a1)
+
+        let str=['sohamshelar','sham','rampawar']
+        document.write("<h1>" + str)
+
+        let s=str.map((a) => a.toUpperCase())
+        document.write("<h2>" + s)
+            
+        let s1=str.filter((a) => a.length > 5)
+        document.write("<h2> Str greater than 5 " + s1 )
+
+        let s2=a.filter((a) => a.toString().length == 2)
+        document.write("<h1> two digit = " + s2)
+        
+</script>
+</body>
+</html>

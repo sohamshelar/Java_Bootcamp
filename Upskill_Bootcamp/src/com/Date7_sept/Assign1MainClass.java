@@ -49,7 +49,6 @@ public class Assign1MainClass {
 	public static void placeOrder()
 	{
 		System.out.println("Enter Customer Id");
-		int cid=Integer.parseInt()
-	}
+			}
 	
 }
