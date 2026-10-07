@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add()
+        {
+            let t1=document.getElementById("txt1")
+            let var1=Number(t1.value)
+
+            let t2=document.getElementById("txt2")
+            let var2=Number(t2.value)
+
+            let var3=var1+var2
+            document.getElementById("result").innerHTML = "Addition = " + var3;
+        }
+    </script>
+    Enter number 1<input type="text" name="txt1" id="txt1"> <br>
+    Enter number 2<input type="text" name="txt2" id="txt2"><br>
+    <button onclick="add()">Add</button>
+
+    <h1 id="result"></h1>
+</body>
+</html>
