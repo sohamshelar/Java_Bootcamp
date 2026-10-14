@@ -1,13 +1,13 @@
 import './App.css'
-import ArrayDemo from './components/ArrayDemo'
-import Counter from './components/Counter'
+import CandidateForm from './components/CandidateFrom'
+
+
 function App() {
 
   return (
     <>
-      <h1>My first Application is {name}</h1>
-      <ArrayDemo></ArrayDemo>
-      <Counter></Counter>
+      <CandidateForm></CandidateForm>
+     
     </>
   )
 }
